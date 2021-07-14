@@ -13,7 +13,7 @@ from Statistics.Sample_Standev import samp_st_dev
 from Statistics.Sample_mean import samp_mean
 from Statistics.Variance_of_population_proportion import variance_of_population_proportion
 from Statistics.Pvalue import p_value
-from Statistics.Variance_of_sam_proportion import variance_samp_prop
+
 
 
 class Statistics(Calculator):
