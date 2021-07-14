@@ -75,10 +75,6 @@ class Statistics(Calculator):
         self.result = population_correlation_coefficient(a, b)
         return self.result
 
-    def variance_of_population_proportion(self, a):
-        self.result = variance_of_population_proportion(a)
-        return self.result
-
     def p_value(self, a):
         self.result = p_value(a)
         return self.result
