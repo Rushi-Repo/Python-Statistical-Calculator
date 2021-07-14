@@ -91,7 +91,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_Population_Variance_calculator(self):  # complete
         print(' ')
-        print('Testing Population Variance')
+        print('Testing Variance')
         try:
             test_data = CsvReader('Data/StatData.csv').data
             answer = CsvReader('Data/StatDataAnswers.csv').data
