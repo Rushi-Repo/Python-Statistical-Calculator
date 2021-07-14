@@ -15,7 +15,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_Population_Mean_calculator(self):  # complete
         print(' ')
-        print('Testing Population Mean')
+        print('Testing Mean')
         try:
             test_data = CsvReader('Data/StatData.csv').data
             answer = CsvReader('Data/StatDataAnswers.csv').data
@@ -34,7 +34,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_Median_calculator(self):  # complete
         print(' ')
-        print('Testing Population Median')
+        print('Testing Median')
         try:
             test_data = CsvReader('Data/StatData.csv').data
             answer = CsvReader('Data/StatDataAnswers.csv').data
@@ -53,7 +53,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_Mode_calculator(self):  # complete
         print(' ')
-        print('Testing Population Mode')
+        print('Testing Mode')
         try:
             test_data = CsvReader('Data/StatData.csv').data
             answer = CsvReader('Data/StatDataAnswers.csv').data
