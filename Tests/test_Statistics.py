@@ -256,21 +256,7 @@ class MyTestCase(unittest.TestCase):
         #x = self.statobj.p_value(dataset)
         #return print(x)
 
-    def test_Variance_of_Sample_Proportion(self): #complete
-        print(' ')
-        print('Testing Variance of Sample Proportion')
-        try:
-            test_data = CsvReader('Data/StatData.csv').data
-        except:
-            print('File not found, Please input valid file.')
 
-        dataset = []
-        for row in test_data:
-            y = int(row['Value 1'])
-            dataset.append(y)
-        x = self.statobj.variance_of_samp_proportion(dataset)
-        self.assertEqual(x, x)
-        print('Successful Testing!')
 
 
 if __name__ == '__main__':  # This runs the unittest
