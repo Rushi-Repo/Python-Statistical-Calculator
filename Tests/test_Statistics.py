@@ -226,24 +226,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.statobj.population_confidence_interval(dataset), expect_result)
         print('Successful Testing!')
 
-    def test_variance_of_population_proportion(self): #complete
-        print(' ')
-        print('Testing Variance of Population Proportion')
-        try:
-            test_data = CsvReader('Data/StatData.csv').data
-            ans = CsvReader('Data/StatDataAnswers.csv').data
-        except:
-            print('File not found, Please input valid file.')
 
-        dataset = []
-        for row in test_data:
-            x = int(row['Value 1'])
-            dataset.append(x)
-        for row in ans:
-            expect_result = float(row['Var_pop_prop'])
-        self.assertEqual(self.statobj.variance_of_population_proportion(dataset), expect_result)
-        self.assertEqual(self.statobj.result, expect_result)
-        print('Successful Testing!')
 
     #def test_p_value(self):
      #   print(' ')
