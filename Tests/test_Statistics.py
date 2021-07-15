@@ -142,49 +142,11 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(x, z)
         print('Successful Testing!')
 
-    def test_z_score_calculator(self):  # complete
-        print(' ')
-        print('Testing ZScore')
-        try:
-            test_data = CsvReader('Data/StatData.csv').data
-            data_answer = CsvReader('Data/Zscore.csv').data
-        except:
-            print('File not found, Please input valid file.')
 
-        dataset = []
-        for row in test_data:
-            y = int(row['Value 1'])
-            dataset.append(y)
-        data_answer1 = []
-        for row in data_answer:
-            z = float(row["Result"])
-            data_answer1.append(z)
-        self.assertEqual(self.statobj.z_score(dataset), data_answer1)
-        self.assertEqual(self.statobj.result, data_answer1)
-        print('Successful Testing!')
 
 
     
 
-    def test_confidence_interval(self):  #complete
-        print(' ')
-        print('Testing Confidence Interval')
-        try:
-            test_data = CsvReader('Data/StatData.csv').data
-            ans = CsvReader('Data/confidenceresult.csv').data
-        except:
-            print('File not found, Please input valid file.')
-
-        dataset = []
-        for row in test_data:
-            x = int(row['Value 1'])
-            dataset.append(x)
-        expect_result = []
-        for row in ans:
-            y = float(row['Result'])
-            expect_result.append(y)
-        self.assertEqual(self.statobj.population_confidence_interval(dataset), expect_result)
-        print('Successful Testing!')
 
 
 
