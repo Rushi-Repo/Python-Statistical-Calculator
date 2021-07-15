@@ -163,29 +163,6 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.statobj.result, data_answer1)
         print('Successful Testing!')
 
-    def test_population_correlation_coefficient(self):  # complete
-        print(' ')
-        print('Testing Population Correlation Coefficient')
-        try:
-            test_data = CsvReader('Data/StatData.csv').data
-            test_data2 = CsvReader('Data/data2.csv').data
-            ans = CsvReader('Data/StatDataAnswers.csv').data
-        except:
-            print('File not found, Please input valid file.')
-
-        dataset = []
-        for row in test_data:
-            y = int(row['Value 1'])
-            dataset.append(y)
-        dataset2 = []
-        for row in test_data2:
-            k = float(row['Result'])
-            dataset2.append(k)
-        for row in ans:
-            expect_result = float(row['Pop_corrcoef'])
-        self.assertEqual(self.statobj.population_correlation_coefficient(dataset, dataset2), expect_result)
-        self.assertEqual(self.statobj.result, expect_result)
-        print('Successful Testing!')
 
     def test_proportion_calculator(self):  # complete
         print(' ')
