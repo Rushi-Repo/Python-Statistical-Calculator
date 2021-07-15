@@ -6,7 +6,7 @@ from Statistics.Mode import mode
 from Statistics.Proportion import proportion
 from Statistics.StandardDeviation import standard_deviation
 from Statistics.Variance import variance
-from Statistics.Population_corelation_coefficient import population_correlation_coefficient
+
 from Statistics.Confidence_interval import confidence_interval
 from Statistics.ZScore import zscore
 from Statistics.Sample_Standev import samp_st_dev
@@ -69,10 +69,6 @@ class Statistics(Calculator):
 
     def z_score(self, a):
         self.result = zscore(a)
-        return self.result
-
-    def population_correlation_coefficient(self, a, b):
-        self.result = population_correlation_coefficient(a, b)
         return self.result
 
     def p_value(self, a):
