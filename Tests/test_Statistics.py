@@ -164,24 +164,7 @@ class MyTestCase(unittest.TestCase):
         print('Successful Testing!')
 
 
-    def test_proportion_calculator(self):  # complete
-        print(' ')
-        print('Testing Proportion')
-        try:
-            test_data = CsvReader('Data/StatData.csv').data
-            answer = CsvReader('Data/StatDataAnswers.csv').data
-        except:
-            print('File not found, Please input valid file.')
-
-        dataset = []
-        for row in test_data:
-            y = int(row['Value 1'])
-            dataset.append(y)
-        for column in answer:
-            expect_result = float((column['Proportion']))
-        self.assertEqual(self.statobj.proportion(dataset), expect_result)
-        self.assertEqual(self.statobj.result, expect_result)
-        print('Successful Testing!')
+    
 
     def test_confidence_interval(self):  #complete
         print(' ')
