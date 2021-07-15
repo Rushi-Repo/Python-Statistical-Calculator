@@ -72,7 +72,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_Population_Standard_Deviation_calculator(self):  # complete
         print(' ')
-        print('Testing Population Standard Deviation')
+        print('Testing Standard Deviation')
         try:
             test_data = CsvReader('Data/StatData.csv').data
             answer = CsvReader('Data/StatDataAnswers.csv').data
