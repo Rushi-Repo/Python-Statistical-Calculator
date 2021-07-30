@@ -1,3 +1,3 @@
 # Statistical Calculator
 
-## Travis Tests : https://travis-ci.com/github/Rushi-Repo/wsd-stats-calc
+## Travis Tests : https://travis-ci.com/Rushi-Repo/WSD-Statistical_Calculator.svg?branch=main
